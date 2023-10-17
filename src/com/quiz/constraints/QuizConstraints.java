@@ -7,6 +7,8 @@ public class QuizConstraints {
 	public  final static String JAVAQUIZ = "1";
 	public  final static String SQLQUIZ = "2";
 	public final static String PYTHONQUIZ = "3";
+	public final static int QUIZSCORE = 15;
+	
 	
 
 }

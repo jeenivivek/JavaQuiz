@@ -2,8 +2,7 @@ package com.quiz.impl;
 
 import java.util.Scanner;
 
-
-
+import com.quiz.constraints.QuizConstraints;
 import com.quiz.inf.JavaQuizInf;
 
 public class JavaQuestionImpl implements JavaQuizInf {
@@ -25,10 +24,13 @@ public class JavaQuestionImpl implements JavaQuizInf {
         	Scanner option = new Scanner(System.in);
     		questionsAnswed = option.next();
     		if(questionsAnswed.equals(answers[i])) {
-    			count++;
-    		}  	
+    			count = count + 5;
+    		}
+    		else {
+    			count--;
+    		}	
         }
-        System.out.println("Your Total Score is " + count + "/" + options.length);
+        System.out.println("Your Total Score is " + count + "/" + QuizConstraints.QUIZSCORE);
 		
 	}
 
@@ -49,10 +51,13 @@ public class JavaQuestionImpl implements JavaQuizInf {
         	Scanner option = new Scanner(System.in);
     		questionsAnswed = option.next();
     		if(questionsAnswed.equals(answers[i])) {
-    			count++;
-    		}  	
+    			count = count + 5;
+    		}
+    		else {
+    			count--;
+    		}
         }
-        System.out.println("Your Total Score is " + count + "/" + options.length);
+        System.out.println("Your Total Score is " + count + "/" + QuizConstraints.QUIZSCORE);
 		
 	}
 
@@ -74,10 +79,13 @@ public class JavaQuestionImpl implements JavaQuizInf {
         	Scanner option = new Scanner(System.in);
     		questionsAnswed = option.next();
     		if(questionsAnswed.equals(answers[i])) {
-    			count++;
-    		}  	
+    			count = count + 5;
+    		}
+    		else {
+    			count--;
+    		}
         }
-        System.out.println("Your Total Score is " + count + "/" + options.length);
+        System.out.println("Your Total Score is " + count + "/" + QuizConstraints.QUIZSCORE);
 	}
 
 	
