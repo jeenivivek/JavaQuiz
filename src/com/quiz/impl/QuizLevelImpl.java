@@ -27,6 +27,22 @@ public class QuizLevelImpl implements QuizLevelInf {
 		
 		
 	}
+
+	@Override
+	public String quizLanguage() {
+	String programmingLanguage;
+	System.out.println("Please Select the Programming Language that you want to Attemt Quiz");
+	System.out.println("1.Java");
+	System.out.println("2.Sql");
+	System.out.println("3.Python");
+	Scanner sc = new Scanner(System.in);
+	programmingLanguage = sc.next();
+	System.out.println("Please Select the Level");
+	return programmingLanguage;
+
+	
+		
+	}
 	
 
 }
